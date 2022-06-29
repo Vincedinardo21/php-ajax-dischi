@@ -1,6 +1,7 @@
 <main><?php
     foreach($dischi as $card){ ?>
-        <h2><?= $card["album"] ?></h2>
+        <img src="<?= $card["poster"] ?>" alt="">
+        <h2><?= $card["title"] ?></h2>
         <div><?= $card["author"] ?></div> 
         <div><?= $card["year"] ?></div><?php       
     } ?>
