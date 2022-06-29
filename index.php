@@ -12,6 +12,10 @@
 <body>
     
     <div id="app">
+        <header>
+            <img src="logo.png" alt="logo">
+        </header>
+
         <div class="card-container">
             <div class="card" v-for="(item, i) in arrayDischi" :key="i">
                 <!-- Card -->
