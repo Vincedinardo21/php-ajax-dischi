@@ -12,12 +12,15 @@
 <body>
     
     <div id="app">
-        <div v-for="(item, i) in arrayDischi" :key="i">
-            <img :src="item.poster" :alt="item.title">
-            <h2>{{item.title}}</h2>
-            <div>{{item.author}}</div>
-            <div>{{item.year}}</div>
-        </div>
+        <div class="card-container">
+            <div class="card" v-for="(item, i) in arrayDischi" :key="i">
+                <!-- Card -->
+                <img :src="item.poster" :alt="item.title">
+                <h2>{{item.title.toUpperCase()}}</h2>
+                <div>{{item.author}}</div>
+                <div>{{item.year}}</div>
+            </div>
+        </div>   
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
